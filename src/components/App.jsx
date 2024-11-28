@@ -1,4 +1,5 @@
 import "../scss/App.scss";
+import "../scss/layout/App.scss";
 import CharacterList from "./CharacterList";
 import { useEffect, useState } from "react";
 import getCharactersFromApi from "../services/getCharactersFromApi";
@@ -20,7 +21,7 @@ function App() {
     setFilterName(valueInput);
   };
   //Condicional ternario para el mensaje de no aparece el texto
-  const message = filterName ? "" : "No hay filtro activo";
+  const message = filterName ? "" : "No existen resultados con su búsqueda";
   console.log(message);
 
   const filteredNameCharacter = characters.filter((nameCharacter) => {
@@ -46,7 +47,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Rick And Morty</h1>
+        <h1 className="title">Rick And Morty</h1>
       </header>
       <main>
         <Routes>

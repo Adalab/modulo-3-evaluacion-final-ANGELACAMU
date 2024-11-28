@@ -1,3 +1,4 @@
+import "../scss/layout/CharacterList.scss";
 import CharacterCard from "./CharacterCard";
 
 function CharacterList({ characters }) {
@@ -8,7 +9,7 @@ function CharacterList({ characters }) {
   return (
     <section>
       <h3>CharacterList</h3>
-      <ul>{charactersElements}</ul>
+      <ul className="text-list">{charactersElements}</ul>
     </section>
   );
 }
