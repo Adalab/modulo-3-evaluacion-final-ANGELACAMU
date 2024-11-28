@@ -32,11 +32,13 @@ function App() {
   //console.log(idCharacter);
 
   const idStr = String(urlId);
+  //creamos la funcion para transformar a string
 
   const character = characters.find((character) => {
     return String(character.id) === idStr;
+    //así nos aseguramos que es string
   });
-  console.log(character);
+  //console.log(character);
 
   return (
     <>
@@ -54,7 +56,10 @@ function App() {
               </>
             }
           />
-          <Route path="/character/:idCharacter" element={<CharacterDetail />} />
+          <Route
+            path="/character/:idCharacter"
+            element={<CharacterDetail character={character} />}
+          />
         </Routes>
       </main>
     </>

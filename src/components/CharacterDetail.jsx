@@ -1,12 +1,13 @@
-function CharacterDetail() {
+function CharacterDetail({ character }) {
+  console.log(character);
   return (
     <section>
-      <img src="" alt="" />
-      <h4>Nombre</h4>
-      <p>Especie</p>
-      <p>Planeta de origen</p>
-      <p>Numero de episodios</p>
-      <p>Esta vivo o muerto</p>
+      <img src={character.photo} alt={character.name} />
+      <h4>{character.name}</h4>
+      <p>{character.specie}</p>
+      <p>{character.planet}</p>
+      <p>{character.episodes.length}</p>
+      <p>{character.status}</p>
     </section>
   );
 }

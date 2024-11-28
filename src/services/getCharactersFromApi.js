@@ -9,6 +9,9 @@ const getCharactersFromApi = () => {
                     name: character.name,
                     specie: character.species,
                     id: character.id,
+                    planet: character.origin.name,
+                    episodes: character.episode,
+                    status: character.status,
 
 
                 }
