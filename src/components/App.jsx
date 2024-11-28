@@ -7,6 +7,7 @@ import Filters from "./filters/Filters";
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  const [filterName, setFilterName] = useState("");
 
   useEffect(() => {
     getCharactersFromApi().then((charactersData) => {
@@ -15,8 +16,13 @@ function App() {
   }, []);
 
   const handleFilterName = (valueInput) => {
-    console.log(valueInput);
+    setFilterName(valueInput);
   };
+
+  const filteredNameCharacter = characters.filter((nameCharacter) => {
+    return nameCharacter.name.toLowerCase().includes(filterName.toLowerCase());
+  });
+  console.log(filteredNameCharacter);
 
   return (
     <>
