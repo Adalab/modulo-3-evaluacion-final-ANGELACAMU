@@ -3,7 +3,7 @@ import CharacterList from "./CharacterList";
 import { useEffect, useState } from "react";
 import getCharactersFromApi from "../services/getCharactersFromApi";
 import Filters from "./filters/Filters";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation, matchPath } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
 
 function App() {
@@ -24,6 +24,14 @@ function App() {
     return nameCharacter.name.toLowerCase().includes(filterName.toLowerCase());
   });
   console.log(filteredNameCharacter);
+
+  const { pathname } = useLocation();
+  const routeData = matchPath("/character/:idCharacter", pathname);
+
+  const idCharacter =
+    routeData !== null ? String(routeData.params.idCharacter) : null;
+
+  console.log(idCharacter);
 
   return (
     <>
