@@ -31,7 +31,7 @@ function App() {
       </header>
       <main>
         <Filters onChangeName={handleFilterName} />
-        <CharacterList characters={characters} />
+        <CharacterList characters={filteredNameCharacter} />
       </main>
     </>
   );
