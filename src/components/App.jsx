@@ -28,10 +28,15 @@ function App() {
   const { pathname } = useLocation();
   const routeData = matchPath("/character/:idCharacter", pathname);
 
-  const idCharacter =
-    routeData !== null ? String(routeData.params.idCharacter) : null;
+  const urlId = routeData !== null ? routeData.params.idCharacter : null;
+  //console.log(idCharacter);
 
-  console.log(idCharacter);
+  const idStr = String(urlId);
+
+  const character = characters.find((character) => {
+    return String(character.id) === idStr;
+  });
+  console.log(character);
 
   return (
     <>
