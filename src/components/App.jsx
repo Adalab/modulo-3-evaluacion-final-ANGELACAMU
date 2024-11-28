@@ -8,17 +8,20 @@ import CharacterDetail from "./CharacterDetail";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  const [filterName, setFilterName] = useState("");
+  const [filterName, setFilterName] = useState(""); //he añadido true para el condicional
 
   useEffect(() => {
     getCharactersFromApi().then((charactersData) => {
       setCharacters(charactersData);
     });
   }, []);
-
+  //PREGUNTAR A ANA
   const handleFilterName = (valueInput) => {
     setFilterName(valueInput);
   };
+  //Condicional ternario para el mensaje de no aparece el texto
+  const message = filterName ? "" : "No hay filtro activo";
+  console.log(message);
 
   const filteredNameCharacter = characters.filter((nameCharacter) => {
     return nameCharacter.name.toLowerCase().includes(filterName.toLowerCase());
@@ -53,6 +56,7 @@ function App() {
               <>
                 <Filters onChangeName={handleFilterName} />
                 <CharacterList characters={filteredNameCharacter} />
+                <p>{message}</p>
               </>
             }
           />
