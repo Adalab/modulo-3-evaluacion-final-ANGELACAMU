@@ -14,13 +14,17 @@ function App() {
     });
   }, []);
 
+  const handleFilterName = (valueInput) => {
+    console.log(valueInput);
+  };
+
   return (
     <>
       <header>
         <h1>Rick And Morty</h1>
       </header>
       <main>
-        <Filters />
+        <Filters onChangeName={handleFilterName} />
         <CharacterList characters={characters} />
       </main>
     </>

@@ -1,5 +1,5 @@
 function CharacterCard({ characterData }) {
-  console.log(characterData);
+  //console.log(characterData);
   return (
     <li>
       <img src={characterData.photo} alt={characterData.name} />

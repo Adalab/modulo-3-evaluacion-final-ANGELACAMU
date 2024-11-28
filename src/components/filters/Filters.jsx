@@ -1,9 +1,9 @@
 import FilterByName from "./FilterByName";
 
-function Filters() {
+function Filters({ onChangeName }) {
   return (
     <form>
-      <FilterByName />
+      <FilterByName onChangeName={onChangeName} />
     </form>
   );
 }

@@ -3,7 +3,7 @@ const getCharactersFromApi = () => {
         .then(res => res.json())
         .then(data => {
             const parsedChararcters = data.results.map((character) => {
-                console.log(character);
+                //console.log(character);
                 return {
                     photo: character.image,
                     name: character.name,
