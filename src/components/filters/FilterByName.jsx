@@ -1,4 +1,4 @@
-import "../../scss/FilterByName.scss";
+//import "../../scss/FilterByName.scss";
 
 function FilterByName({ onChangeName }) {
   const handleChange = (ev) => {
