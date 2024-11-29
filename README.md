@@ -1,3 +1,22 @@
+# ENCUENTRA A TU PERSONAJE DE RICK Y MORTY
+En esta página web puedes buscar el nombre de tu personaje favorito de la serie Rick y Morty y podras ver una lista de detalles y caracteríasticas sobre él.
+
+# VISUALIZACIÓN
+Puedes acceder directamente mediante este enlace a la web:
+
+# INSTALACIÓN Y CONFIGURACIÓN
+ 1- Clonar el repositorio.
+     Copia este enlace:
+
+ 2- instalar las dependencias
+     Hacer npm install en la termial.
+
+ 3- Arrancar el proyecto.
+     Hacer npm run dev.
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
