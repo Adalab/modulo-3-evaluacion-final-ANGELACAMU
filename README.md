@@ -2,7 +2,7 @@
 En esta página web puedes buscar el nombre de tu personaje favorito de la serie Rick y Morty y podras ver una lista de detalles y caracteríasticas sobre él.
 
 # VISUALIZACIÓN
-Puedes acceder directamente mediante este enlace a la web:
+Puedes acceder directamente mediante este enlace a la web: http://beta.adalab.es/modulo-3-evaluacion-final-ANGELACAMU/
 
 # INSTALACIÓN Y CONFIGURACIÓN
  1- Clonar el repositorio.
