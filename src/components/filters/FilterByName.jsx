@@ -7,7 +7,7 @@ function FilterByName({ onChangeName }) {
 
   return (
     <>
-      <label htmlFor="name"></label>
+      <label htmlFor="name">Escribe aquí tu búsqueda:</label>
       <input className="input" type="text" id="name" onChange={handleChange} />
     </>
   );
