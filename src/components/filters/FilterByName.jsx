@@ -1,4 +1,4 @@
-//import "../../scss/FilterByName.scss";
+import "../../scss/layout/FilterByName.scss";
 
 function FilterByName({ onChangeName }) {
   const handleChange = (ev) => {
@@ -7,8 +7,15 @@ function FilterByName({ onChangeName }) {
 
   return (
     <>
-      <label htmlFor="name">Escribe aquí tu búsqueda:</label>
-      <input className="input" type="text" id="name" onChange={handleChange} />
+      <div className="cointainer-input">
+        <label htmlFor="name"></label>
+        <input
+          className="input"
+          type="text"
+          id="name"
+          onChange={handleChange}
+        />
+      </div>
     </>
   );
 }
