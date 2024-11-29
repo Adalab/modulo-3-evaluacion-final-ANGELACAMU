@@ -6,7 +6,7 @@ Puedes acceder directamente mediante este enlace a la web: http://beta.adalab.es
 
 # INSTALACIÓN Y CONFIGURACIÓN
  1- Clonar el repositorio.
-     Copia este enlace:
+     Copia este enlace: https://github.com/Adalab/modulo-3-evaluacion-final-ANGELACAMU.git
 
  2- instalar las dependencias
      Hacer npm install en la termial.
