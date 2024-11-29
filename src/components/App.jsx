@@ -6,6 +6,7 @@ import getCharactersFromApi from "../services/getCharactersFromApi";
 import Filters from "./filters/Filters";
 import { Routes, Route, useLocation, matchPath } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
+import imageTittle from "../images/header-rick.jpg";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -46,10 +47,14 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1 className="title">Rick And Morty</h1>
+      <header className="header">
+        <img
+          className="header-image"
+          src={imageTittle}
+          alt="rick and morty tittle logo text"
+        />
       </header>
-      <main>
+      <main className="main-container">
         <Routes>
           <Route
             path="/"

@@ -1,3 +1,5 @@
+//import ".../scss/layout/FilterByName.scss";
+
 function FilterByName({ onChangeName }) {
   const handleChange = (ev) => {
     onChangeName(ev.target.value);
@@ -5,8 +7,8 @@ function FilterByName({ onChangeName }) {
 
   return (
     <>
-      <label htmlFor="name">Name</label>
-      <input type="text" id="name" onChange={handleChange} />
+      <label htmlFor="name"></label>
+      <input className="input" type="text" id="name" onChange={handleChange} />
     </>
   );
 }
