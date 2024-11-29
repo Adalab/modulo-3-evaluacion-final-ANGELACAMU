@@ -1,8 +1,10 @@
 .title-list {
-        list-style-type: none;
-            align-items: center;
-            text-align: center;
-            text-decoration: none;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    
             
 }
 
@@ -11,9 +13,13 @@
     width: 400px;
     margin: 20px;
     align-items: center;
+    border-radius: 10%;
+    
 }
 
 .img-card {
     width: 250px;
     padding: 10px;
+    border-radius: 10%;
+  
 }
